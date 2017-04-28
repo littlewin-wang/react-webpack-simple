@@ -1,13 +1,18 @@
 {
-  "name": "react-cli",
+  "name": "react-webpack-simple",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple Webpack + react-loader setup for quick prototyping.",
+  "main": "",
   "scripts": {
-    "lint": "eslint ./cfg",
+    "lint": "eslint ./",
+    "build": "webpack --env=build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "boilerplate",
+    "webpack"
+  ],
   "author": "littlewin <littlewin.wang@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -23,8 +28,17 @@
     "eslint-loader": "^1.0.0",
     "eslint-plugin-react": "^6.10.3",
     "file-loader": "^0.11.1",
+    "minimist": "^1.2.0",
+    "shelljs": "^0.7.7",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.0.0"
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "core-js": "^2.0.0",
+    "normalize.css": "^6.0.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
   }
 }

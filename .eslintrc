@@ -28,6 +28,12 @@
     "no-unreachable": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
-    "semi": [1, "never"]
+    "semi": [1, "never"],
+    "keyword-spacing": [1, { "after": true }],
+    "space-before-function-paren": [1, {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "ignore"
+    }]
   }
 }

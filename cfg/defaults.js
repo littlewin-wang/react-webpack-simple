@@ -12,7 +12,7 @@ const defaultPort = 8080
  * Get the default modules for webpack
  * @return {Object}
  */
-function getDefaultModules() {
+function getDefaultModules () {
   return {
     preLoaders: [
       {
@@ -56,7 +56,7 @@ function getDefaultModules() {
 
 module.exports = {
   srcPath: srcPath,
-  publicPath: /assets/,
+  publicPath: '/assets/',
   port: defaultPort,
   getDefaultModules: getDefaultModules
 }
