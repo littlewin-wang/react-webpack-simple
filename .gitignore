@@ -1,0 +1,12 @@
+# Logs
+logs
+*.log
+
+# Mac
+.DS_Store
+
+# Dependency directory
+node_modules
+
+# IDE/Editor data
+.idea
