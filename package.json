@@ -6,7 +6,10 @@
   "scripts": {
     "build": "webpack --env=build",
     "clean": "rm -rf dist/*",
+    "dev": "node server.js --env=dev",
     "lint": "eslint ./src",
+    "serve": "node server.js --env=dev",
+    "serve:build" : "node server.js --env=build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -30,6 +33,8 @@
     "eslint-plugin-react": "^6.10.3",
     "file-loader": "^0.11.1",
     "minimist": "^1.2.0",
+    "open": "0.0.5",
+    "react-hot-loader": "^1.3.1",
     "shelljs": "^0.7.7",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",

@@ -11,6 +11,7 @@ var distPath = path.join(__dirname, '../dist')
 rm('-rf', distPath)
 mkdir('-p', distPath)
 cp('-R', 'static/*', distPath)
+cp('src/index.html', distPath)
 
 let config = Object.assign({}, baseConfig, {
   entry: path.join(__dirname, '../src/index'),
