@@ -4,8 +4,9 @@
   "description": "A simple Webpack + react-loader setup for quick prototyping.",
   "main": "",
   "scripts": {
-    "lint": "eslint ./",
     "build": "webpack --env=build",
+    "clean": "rm -rf dist/*",
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
