@@ -5,6 +5,9 @@ logs
 # Mac
 .DS_Store
 
+# Dist files
+dist
+
 # Dependency directory
 node_modules
 
