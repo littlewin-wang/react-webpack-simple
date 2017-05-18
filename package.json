@@ -8,6 +8,7 @@
     "clean": "rm -rf dist/*",
     "dev": "node server.js --env=dev",
     "lint": "eslint ./src",
+    "posttest": "npm run lint",
     "serve": "node server.js --env=dev",
     "serve:build": "node server.js --env=build",
     "test": "karma start"

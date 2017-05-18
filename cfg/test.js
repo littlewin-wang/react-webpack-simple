@@ -1,9 +1,9 @@
-'use strict';
+'use strict'
 
-let path = require('path');
-let srcPath = path.join(__dirname, '/../src/');
+let path = require('path')
+let srcPath = path.join(__dirname, '/../src/')
 
-let baseConfig = require('./base');
+let baseConfig = require('./base')
 
 // Add needed plugins here
 
@@ -47,4 +47,4 @@ module.exports = {
       config: srcPath + 'config/' + process.env.REACT_WEBPACK_ENV
     }
   }
-};
+}

@@ -2,16 +2,17 @@
 
 require('shelljs/global')
 let path = require('path')
+let shell = require('shelljs')
 let webpack = require('webpack')
 
 let baseConfig = require('./base')
 let defaultSettings = require('./defaults')
 
 var distPath = path.join(__dirname, '../dist')
-rm('-rf', distPath)
-mkdir('-p', distPath)
-cp('-R', 'static/*', distPath)
-cp('src/index.html', distPath)
+shell.rm('-rf', distPath)
+shell.mkdir('-p', distPath)
+shell.cp('-R', 'static/*', distPath)
+shell.cp('src/index.html', distPath)
 
 let config = Object.assign({}, baseConfig, {
   entry: path.join(__dirname, '../src/index'),
